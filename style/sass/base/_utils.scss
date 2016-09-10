@@ -1,0 +1,91 @@
+
+/**
+ * 小工具样式
+ * @author: Allenice
+ */
+
+// 隐藏
+.hide {
+    display: none !important;
+}
+
+// 显示
+.show {
+    display: block !important;
+}
+
+// 清除浮动
+.cf {
+    @include clearfix();
+}
+
+.fl {
+    float: left;
+}
+
+.fr {
+    float: right;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.text-right {
+    text-align: right;
+}
+
+.text-left {
+    text-align: left;
+}
+
+// 大写
+.upper {
+    text-transform: uppercase;
+}
+
+// 超出显示省略号
+.ellipsis {
+    @include ellipsis();
+}
+
+// margin and padding
+$mpNum: (0,5,10,15,20,25,30);
+
+@each $num in $mpNum {
+    .m-t-#{$num} {
+        margin-top: rem($num)!important;
+    }
+
+    .m-r-#{$num} {
+        margin-right: rem($num);
+    }
+
+    .m-b-#{$num} {
+        margin-bottom: rem($num);
+    }
+
+    .m-l-#{$num} {
+        margin-left: rem($num);
+    }
+
+    .p-t-#{$num} {
+        padding-top: rem($num);
+    }
+
+    .p-r-#{$num} {
+        padding-right: rem($num);
+    }
+
+    .p-b-#{$num} {
+        padding-bottom: rem($num);
+    }
+
+    .p-l-#{$num} {
+        padding-left: rem($num);
+    }
+}
+
+.white-bg {
+    background-color: #fff;
+}

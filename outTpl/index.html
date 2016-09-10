@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
+    <meta name="format-detection" content="telephone=no, email=no"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-touch-fullscreen" content="yes" />
+    <meta http-equiv="Cache-Control" content="no-siteapp" />
+    <meta name="renderer" content="webkit">
+
+    <title>card</title>
+    <% if (env == 'dev') { %>
+        <link rel="stylesheet" href="${staticPath}/style/css/app.css">
+    <% } else { %>
+        <link rel="stylesheet" href="${staticPath}/build/${env}/${assets.app.css}">
+    <% } %>
+</head>
+
+<body>
+
+<div id="main">
+    
+</div>
+<% if (env == 'dev') { %>
+    <script src="${staticPath}/js/vendor/jquery/jquery-1.10.2.min.js"></script>
+<% } else { %>
+    <script src="//upcdn.b0.upaiyun.com/libs/jquery/jquery-1.10.2.min.js"></script>
+<% } %>
+<script src="http://api.map.baidu.com/api?v=2.0&ak=Thgatd7xZ7VHoQSM6rIL0kmSSBBO60Ks"></script>
+<script src="${staticPath}/build/${env}/${assets.commons.js}"></script>
+<script src="${staticPath}/build/${env}/${assets.app.js}"></script>
+</body>
+
+</html>

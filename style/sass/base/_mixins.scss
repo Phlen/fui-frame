@@ -1,0 +1,17 @@
+/**
+ * minxins
+ */
+
+// 省略号
+@mixin ellipsis {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+@mixin opacity($alpha) {
+    // IE 8
+    -ms-filter: unquote("progid:DXImageTransform.Microsoft.Alpha(Opacity=#{$alpha * 100})");
+    // Real Browsers
+    opacity: $alpha;
+}

@@ -1,0 +1,47 @@
+{
+    "name": "mcoreApp",
+    "version": "1.0.0",
+    "description": "a example for webpack & gulp with mcore",
+    "author": "allen",
+
+    "scripts": {
+        "dev": "webpack -w --profile & gulp",
+        "prod": "gulp build && webpack --config webpack.prod.config.js"
+    },
+    "devDependencies": {
+        "autoprefixer": "^6.3.6",
+        "browser-sync": "^2.12.7",
+        "clean-webpack-plugin": "^0.1.9",
+        "coffee-loader": "^0.7.2",
+        "coffee-script": "^1.10.0",
+        "css-loader": "^0.23.1",
+        "del": "^2.2.1",
+        "extract-text-webpack-plugin": "^1.0.1",
+        "file-loader": "^0.9.0",
+        "fs-plus": "^2.9.1",
+        "glob": "^7.0.3",
+        "gulp": "^3.9.1",
+        "gulp-filter": "^4.0.0",
+        "gulp-postcss": "^6.1.1",
+        "gulp-rename": "^1.2.2",
+        "gulp-sass": "^2.3.1",
+        "gulp-sourcemaps": "^1.6.0",
+        "h2svd-loader": "^1.0.13",
+        "html-minifier": "^2.1.2",
+        "jquery-touch-events": "git+https://github.com/benmajor/jQuery-Touch-Events.git",
+        "loader-utils": "^0.2.15",
+        "mcoreapp": "^2.0.30",
+        "mocha": "^2.3.4",
+        "moment": "^2.13.0",
+        "node-sass": "^3.7.0",
+        "postcss-assets": "^4.1.0",
+        "postcss-at2x": "^2.0.0",
+        "postcss-inline-svg": "^1.4.0",
+        "style-loader": "^0.13.1",
+        "url-loader": "^0.5.7",
+        "webpack": "^1.12.9"
+    },
+    "dependencies": {
+        "lodash": "^4.13.1"
+    }
+}
